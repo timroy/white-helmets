@@ -275,16 +275,16 @@ ts_tweets <-
   theme(legend.position = "none")
 ggsave("./figs/tweets_over_time.png", ts_tweets, "png", width = 6.5, height = 2)
 
-39/529
+
+# some proportions for the paper
 1/17
-unique()
 
 bots <- filter(bot_probs_retweets_all, prob_bot >= 0.9)
 
-39/length(unique(bots$screen_name))
+39/529 # all users
+39/length(unique(bots$screen_name)) # just bots
 
-unique()
-
+# t.tests ####
 t.result <- t.test(bot_probs_retweets_all$prob_bot, 
                    bot_probs_mentions$prob_bot, var.equal = TRUE)
 t.tidy <- t.result %>% broom::tidy()
