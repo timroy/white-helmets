@@ -45,5 +45,6 @@ docs/
 po/*~
 
 /scripts/API-keys.R
+/scripts/academicTwitter.R
 
 /data_clean/*
