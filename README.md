@@ -14,6 +14,6 @@
 * BotOrNot might exceed its rate limit for retweeters, wait 15 minutes and move on to the next set of retweeters
 * output figures and latex tables
 * check `russian_linked_tweets_csv_hashed.csv` (January 2019) for RT and WH intersection
-* get random sumstats and run t.test
+* get summary statistics and run t.test
 
  
